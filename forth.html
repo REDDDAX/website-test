@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: black;
+        }
         button{
             width: 275PX;
             height: 150px;
@@ -28,12 +31,26 @@
             color: red;
             font-family:sans-serif;
             font-size: larger;
-
+ }
+         @media (max-width: 400px){
+body{
+    background-color: white;
+}
+button{
+    position: relative;
+    margin-right: 50px;
+    top: 250px;
+}
+span{
+    font-size: x-small;
+    text-align: left;
+}
          }
+         
         
     </style>
 </head>
-<body style="background-color:black">
+<body>
     <button> <b>this doesn't work, click that link above</b></button>
     <span><a href="you_won.html">this one works</a></span>
 </body>
